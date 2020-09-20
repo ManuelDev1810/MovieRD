@@ -11,6 +11,7 @@
     <Folder Include="Services\Interfaces\" />
     <Folder Include="Services\Repositories\" />
     <Folder Include="Data\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
@@ -22,6 +23,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="MoviesForCollege.db" />
+    <None Remove="MoviesForCollege.db-shm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="appsettings.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MoviesForCollege.db">
@@ -32,5 +37,11 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Startup.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="appsettings.json" Condition="'$(ExcludeConfigFilesFromBuildOutput)'!='true'">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
   </ItemGroup>
 </Project>

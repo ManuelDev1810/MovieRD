@@ -1,5 +1,4 @@
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/appsettings.Development.json
-/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/MoviesForCollege.db
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Startup.cs
@@ -59,3 +58,4 @@
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.pdb
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.genruntimeconfig.cache
+/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.csprojAssemblyReference.cache
