@@ -1,11 +1,18 @@
 ﻿<Properties StartupConfiguration="{2E54A3A1-0CAE-47E1-AE46-EC5C5902D7B5}|Default">
-  <MonoDevelop.Ide.ItemProperties.MovieProjectApi FirstBuild="True" PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MovieProjectApi PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieProjectApi/Startup.cs">
+    <Files>
+      <File FileName="MovieProjectApi/Data/MoviesForCollegeDbContext.cs" Line="1" Column="1" />
+      <File FileName="MovieProjectApi/appsettings.json" Line="1" Column="1" />
+      <File FileName="MovieProjectApi/Startup.cs" Line="28" Column="39" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MovieProjectApi" expanded="True" selected="True">
-            <Node name="MovieProjectApi" expanded="True" />
+          <Node name="MovieProjectApi" expanded="True">
+            <Node name="MovieProjectApi" expanded="True">
+              <Node name="Startup.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
