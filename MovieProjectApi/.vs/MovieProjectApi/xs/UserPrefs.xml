@@ -1,27 +1,10 @@
-﻿<Properties StartupConfiguration="{2E54A3A1-0CAE-47E1-AE46-EC5C5902D7B5}|Default">
+﻿<Properties StartupConfiguration="{DB78B507-EBE9-47AB-A44F-54F3E17F8444}|Default">
   <MonoDevelop.Ide.ItemProperties.MovieProjectApi PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieProjectApi/Services/Repositories/CommentRepository.cs">
-    <Files>
-      <File FileName="MovieProjectApi/Services/Repositories/MovieRepository.cs" Line="10" Column="31" />
-      <File FileName="MovieProjectApi/Services/Interfaces/ICommentRepository.cs" Line="8" Column="6" />
-      <File FileName="MovieProjectApi/Services/Repositories/GenericRepository.cs" Line="1" Column="1" />
-      <File FileName="MovieProjectApi/Services/Repositories/CommentRepository.cs" Line="15" Column="1" />
-      <File FileName="MovieProjectApi/Startup.cs" Line="36" Column="10" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MovieProjectApi" expanded="True">
-            <Node name="MovieProjectApi" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="Interfaces" expanded="True" />
-                <Node name="Repositories" expanded="True">
-                  <Node name="CommentRepository.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node />
         </State>
       </Pad>
     </Pads>

@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieProjectApi", "MovieProjectApi\MovieProjectApi.csproj", "{2E54A3A1-0CAE-47E1-AE46-EC5C5902D7B5}"
+Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "MovieProjectApi", "MovieProjectApi\MovieProjectApi.csproj", "{DB78B507-EBE9-47AB-A44F-54F3E17F8444}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +9,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2E54A3A1-0CAE-47E1-AE46-EC5C5902D7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E54A3A1-0CAE-47E1-AE46-EC5C5902D7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E54A3A1-0CAE-47E1-AE46-EC5C5902D7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2E54A3A1-0CAE-47E1-AE46-EC5C5902D7B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB78B507-EBE9-47AB-A44F-54F3E17F8444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB78B507-EBE9-47AB-A44F-54F3E17F8444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB78B507-EBE9-47AB-A44F-54F3E17F8444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB78B507-EBE9-47AB-A44F-54F3E17F8444}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
