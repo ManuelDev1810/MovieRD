@@ -10,40 +10,41 @@ namespace MovieProjectApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class MovieController : ControllerBase
+    public class CommentController : ControllerBase
     {
-        private IMovieRepository _movieRepository;
-
-        public MovieController(IMovieRepository movieRepository)
+        public ICommentRepository _commentRepository { get; set; }
+        public CommentController(ICommentRepository commentRepository)
         {
-            _movieRepository = movieRepository;
+            _commentRepository = commentRepository;
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Movie>> Get()
+        public ActionResult<IEnumerable<Comment>> Get()
         {
-            return Ok(_movieRepository.GetAllWithComments());
+            return Ok(_commentRepository.GetAllWithMovie());
         }
 
         [HttpGet("GetByID/{id}")]
-        public async Task<Movie> GetByID(string id)
+        public async Task<Comment> GetByID(string id)
         {
-            return await _movieRepository.GetByID(id);
+            return await _commentRepository.GetByID(id);
         }
 
         [HttpPost]
-        public ActionResult Post(Movie movie)
+        public ActionResult Post(Comment comment)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _movieRepository.Add(movie);
-                } catch (Exception e)
+                    _commentRepository.Add(comment);
+                }
+                catch (Exception e)
                 {
                     return BadRequest(e.Message);
                 }
-            } else
+            }
+            else
             {
                 string errorMessages = string.Join("; ", ModelState.Values.SelectMany(x => x.Errors).Select(x => x.ErrorMessage));
                 return BadRequest(errorMessages);
@@ -53,13 +54,13 @@ namespace MovieProjectApi.Controllers
         }
 
         [HttpPatch]
-        public ActionResult Update(Movie movie)
+        public ActionResult Update(Comment comment)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _movieRepository.Update(movie);
+                    _commentRepository.Update(comment);
                 }
                 catch (Exception e)
                 {
@@ -82,7 +83,7 @@ namespace MovieProjectApi.Controllers
             {
                 try
                 {
-                    _movieRepository.Remove(await GetByID(id));
+                    _commentRepository.Remove(await GetByID(id));
                 }
                 catch (Exception e)
                 {
@@ -97,5 +98,6 @@ namespace MovieProjectApi.Controllers
 
             return Ok();
         }
+
     }
 }

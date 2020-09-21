@@ -35,23 +35,23 @@ namespace MovieProjectApi.Migrations
                     ID = table.Column<Guid>(nullable: false),
                     Description = table.Column<string>(nullable: true),
                     Date = table.Column<DateTime>(nullable: false),
-                    MovieID = table.Column<Guid>(nullable: true)
+                    MovieId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Comment", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Comment_Movie_MovieID",
-                        column: x => x.MovieID,
+                        name: "FK_Comment_Movie_MovieId",
+                        column: x => x.MovieId,
                         principalTable: "Movie",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Comment_MovieID",
+                name: "IX_Comment_MovieId",
                 table: "Comment",
-                column: "MovieID");
+                column: "MovieId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

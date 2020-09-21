@@ -1,12 +1,13 @@
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
-/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/MoviesForCollege.db
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Startup.cs
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/MovieProjectApi.deps.json
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/MovieProjectApi.runtimeconfig.json
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/MovieProjectApi.runtimeconfig.dev.json
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/MovieProjectApi.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/MovieProjectApi.pdb
+/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
@@ -28,6 +29,8 @@
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
@@ -47,6 +50,7 @@
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.csprojAssemblyReference.cache
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.AssemblyInfoInputs.cache
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.AssemblyInfo.cs
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.csproj.CoreCompileInputs.cache
@@ -58,4 +62,4 @@
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.dll
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.pdb
 /Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.genruntimeconfig.cache
-/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/Debug/netcoreapp3.1/MovieProjectApi.csprojAssemblyReference.cache
+/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/bin/Debug/netcoreapp3.1/MoviesForCollege.db

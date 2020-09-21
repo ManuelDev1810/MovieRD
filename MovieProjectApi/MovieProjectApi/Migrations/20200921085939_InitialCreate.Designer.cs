@@ -9,7 +9,7 @@ using MovieProjectApi.Data;
 namespace MovieProjectApi.Migrations
 {
     [DbContext(typeof(MoviesForCollegeDbContext))]
-    [Migration("20200920022814_InitialCreate")]
+    [Migration("20200921085939_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,12 +30,12 @@ namespace MovieProjectApi.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
-                    b.Property<Guid?>("MovieID")
+                    b.Property<Guid>("MovieId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("MovieID");
+                    b.HasIndex("MovieId");
 
                     b.ToTable("Comment");
                 });
@@ -85,7 +85,9 @@ namespace MovieProjectApi.Migrations
                 {
                     b.HasOne("MovieProjectApi.Models.Movie", "Movie")
                         .WithMany("Comments")
-                        .HasForeignKey("MovieID");
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5TIqH74AhDv3T3au9uB8TPCkCjGuHWL5Zqj67VSuwlxtzMIKMQy/51pV5omy/mCEo3frj6WzEescliAxrwmkxA==",
+  "dgSpecHash": "r8D0PBJsRWr8ysvaeOLj5PwdKDurosh2c4QPDfCUVCYlMl4hFG3MbM84YNUbNu2p+t/Eugb1hvq4zxZZEYB6BQ==",
   "success": true,
   "projectFilePath": "/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/MovieProjectApi.csproj",
   "expectedPackageFiles": [
+    "/Users/manueldejesusguerrerovasquez/.nuget/packages/microsoft.aspnetcore.jsonpatch/3.1.8/microsoft.aspnetcore.jsonpatch.3.1.8.nupkg.sha512",
+    "/Users/manueldejesusguerrerovasquez/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/3.1.8/microsoft.aspnetcore.mvc.newtonsoftjson.3.1.8.nupkg.sha512",
     "/Users/manueldejesusguerrerovasquez/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/manueldejesusguerrerovasquez/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/Users/manueldejesusguerrerovasquez/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
@@ -28,6 +30,8 @@
     "/Users/manueldejesusguerrerovasquez/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.8/microsoft.extensions.logging.abstractions.3.1.8.nupkg.sha512",
     "/Users/manueldejesusguerrerovasquez/.nuget/packages/microsoft.extensions.options/3.1.8/microsoft.extensions.options.3.1.8.nupkg.sha512",
     "/Users/manueldejesusguerrerovasquez/.nuget/packages/microsoft.extensions.primitives/3.1.8/microsoft.extensions.primitives.3.1.8.nupkg.sha512",
+    "/Users/manueldejesusguerrerovasquez/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/manueldejesusguerrerovasquez/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/manueldejesusguerrerovasquez/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.2/sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512",
     "/Users/manueldejesusguerrerovasquez/.nuget/packages/sqlitepclraw.core/2.0.2/sqlitepclraw.core.2.0.2.nupkg.sha512",
     "/Users/manueldejesusguerrerovasquez/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.2/sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
