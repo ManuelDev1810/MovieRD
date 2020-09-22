@@ -34,3 +34,5 @@
 /Users/manueldejesusguerrerovasquez/Projects/MovieProject/MovieProject/obj/Debug/netcoreapp3.1/MovieProject.csproj.CopyComplete
 /Users/manueldejesusguerrerovasquez/Projects/MovieProject/MovieProject/obj/Debug/netcoreapp3.1/Razor/Views/Movie/Index.cshtml.g.cs
 /Users/manueldejesusguerrerovasquez/Projects/MovieProject/MovieProject/obj/Debug/netcoreapp3.1/Razor/Views/Admin/Index.cshtml.g.cs
+/Users/manueldejesusguerrerovasquez/Projects/MovieProject/MovieProject/obj/Debug/netcoreapp3.1/Razor/Views/Movie/Create.cshtml.g.cs
+/Users/manueldejesusguerrerovasquez/Projects/MovieProject/MovieProject/obj/Debug/netcoreapp3.1/Razor/Views/Movie/Edit.cshtml.g.cs
