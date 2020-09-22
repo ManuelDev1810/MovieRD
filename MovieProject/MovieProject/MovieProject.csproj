@@ -9,4 +9,7 @@
     <Folder Include="Views\Movie\" />
     <Folder Include="Views\Admin\" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Net.Http.Json" Version="3.2.1" />
+  </ItemGroup>
 </Project>

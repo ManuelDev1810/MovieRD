@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PeKnxLOUYdxTEEtxBgN2s66oPwojatlZdzm7HtUhAKhVgQkqJTSZTaUoJcf5JsxvFpZfk3zw+vtrYR1StmEJ+w==",
+  "dgSpecHash": "/zcgMqE+rzNYy48c0GCxiYSptlMMRoao1JB163QajNbCdgGCE6WhlL7blngbfRFqPoJ/GEuWmEn7S+2kY1UfxA==",
   "success": true,
   "projectFilePath": "/Users/manueldejesusguerrerovasquez/Projects/MovieProject/MovieProject/MovieProject.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/manueldejesusguerrerovasquez/.nuget/packages/system.net.http.json/3.2.1/system.net.http.json.3.2.1.nupkg.sha512",
+    "/Users/manueldejesusguerrerovasquez/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512"
+  ],
   "logs": []
 }

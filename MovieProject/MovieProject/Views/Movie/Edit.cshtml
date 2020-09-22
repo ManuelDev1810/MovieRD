@@ -1,1 +1,81 @@
-﻿Editar
+﻿@model Movie
+
+<div class="d-flex justify-content-between align-items-end">
+    <h5 class="my-0 border-bottom border-dark mb-3" style="font-style: italic; font-family: 'Kufam';">Edit Movie</h5>
+</div>
+
+<form method="post" asp-action="Edit" asp-controller="Movie">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="Name">Name</label>
+            <input type="text" class="form-control" id="name" asp-for="Name" placeholder="Name of the Movie">
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="Duration">Duration</label>
+            <input class="form-control" asp-for="Duration" placeholder="Duration">
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="UrlVideo">Video URL</label>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">https://youtu.be/5bmy5uRDQYs</span>
+            </div>
+            <input type="text" asp-for="UrlVideo" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="UrlLogo">Logo URL</label>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">https://page.com/action.png</span>
+            </div>
+            <input type="text" asp-for="UrlLogo" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-3">
+            <label asp-for="Category">Category</label>
+            <select id="inputState" class="form-control" asp-for="Category">
+                <option selected>Choose...</option>
+                <option value="1">Action</option>
+                <option value="2">Comedy</option>
+                <option value="3">Drama</option>
+                <option value="4">Fantasy</option>
+                <option value="5">Horror</option>
+                <option value="6">Mystery</option>
+                <option value="7">Romance</option>
+                <option value="8">Thriller</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="Language">Language</label>
+            <select id="inputState" class="form-control" asp-for="Language">
+                <option selected>Choose...</option>
+                <option value="1">Mandarin</option>
+                <option value="2">Spanish</option>
+                <option value="3">English</option>
+                <option value="4">Hindi</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="Rating">Rating</label>
+            <input type="range" asp-for="Rating" class="form-control custom-range mt-3" min="0" max="5" step="0.5" id="rating">
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="Release">Release</label>
+            <input type="date" asp-for="Release" class="form-control" id="release">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" asp-for="IncludedSubtitles" type="checkbox" id="includedSubtitles">
+            <label class="form-check-label" for="includedSubtitles">
+                Included Subtitles
+            </label>
+        </div>
+    </div>
+    <nav class="my-2 my-md-0 mr-md-3">
+    </nav></>
+    <button type="submit" class="p-2 btn btn-outline-dark" style="font-family: 'Kufam'; font-style: italic;">Edit Movie</button>
+</form>

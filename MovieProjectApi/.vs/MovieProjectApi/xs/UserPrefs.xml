@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{DB78B507-EBE9-47AB-A44F-54F3E17F8444}|Default">
   <MonoDevelop.Ide.ItemProperties.MovieProjectApi PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieProjectApi/Models/Comment.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieProjectApi/Controllers/MovieController.cs">
     <Files>
-      <File FileName="MovieProjectApi/Startup.cs" Line="48" Column="1" />
-      <File FileName="MovieProjectApi/Models/Movie.cs" Line="42" Column="6" />
-      <File FileName="MovieProjectApi/Models/Comment.cs" Line="15" Column="7" />
+      <File FileName="MovieProjectApi/Controllers/MovieController.cs" Line="32" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MovieProjectApi" expanded="True">
             <Node name="MovieProjectApi" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="Comment.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="MovieController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Repositories" expanded="True" />
               </Node>
             </Node>
           </Node>

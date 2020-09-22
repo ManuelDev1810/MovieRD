@@ -29,6 +29,15 @@ namespace MovieProjectApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Add cors Policy
+            services.AddCors(options =>
+            {
+                options.AddPolicy("mp", builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
+
             services.AddControllers().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddDbContext<MoviesForCollegeDbContext>(opt => opt.UseSqlite(Configuration["ConnectionStrings:MoviesForCollege"]));
@@ -47,6 +56,8 @@ namespace MovieProjectApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("mp");
 
             app.UseAuthorization();
 

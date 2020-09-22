@@ -24,6 +24,11 @@ namespace MovieProject
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //Http client Factory into the Dependecy Injection
+            services.AddHttpClient();
+            services.AddHttpClient("MovieProject", c => {
+                c.BaseAddress = new Uri(Configuration.GetValue<string>("MovieProjectAPI"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
