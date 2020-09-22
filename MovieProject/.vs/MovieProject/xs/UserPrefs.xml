@@ -1,31 +1,17 @@
 ﻿<Properties StartupConfiguration="{A5B5F245-E9EB-40DB-8724-912D233B2312}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieProject/Views/Movie/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieProject/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="MovieProject/Controllers/MovieController.cs" Line="11" Column="10" />
-      <File FileName="MovieProject/Controllers/CommentController.cs" Line="9" Column="6" />
-      <File FileName="MovieProject/Views/Movie/Index.cshtml" Line="22" Column="21" />
-      <File FileName="MovieProject/Startup.cs" Line="53" Column="48" />
-      <File FileName="MovieProject/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="MovieProject/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="MovieProject/Views/Admin/Index.cshtml" Line="11" Column="28" />
+      <File FileName="MovieProject/Views/Shared/_Layout.cshtml" Line="9" Column="81" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MovieProject" expanded="True">
             <Node name="MovieProject" expanded="True">
-              <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Movie" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="lib" expanded="True">
-                  <Node name="bootstrap" expanded="True">
-                    <Node name="dist" expanded="True">
-                      <Node name="css" expanded="True" />
-                    </Node>
-                  </Node>
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
                 </Node>
               </Node>
             </Node>

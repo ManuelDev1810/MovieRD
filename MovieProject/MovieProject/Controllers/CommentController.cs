@@ -1,10 +1,10 @@
 ﻿using System;
+using Microsoft.AspNetCore.Mvc;
+
 namespace MovieProject.Controllers
 {
-    public class CommentController
+    public class CommentController : Controller
     {
-        public CommentController()
-        {
-        }
+        
     }
 }

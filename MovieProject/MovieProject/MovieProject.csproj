@@ -7,5 +7,6 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Views\Movie\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
 </Project>
