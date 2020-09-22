@@ -5,15 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MovieProject</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
+    <div class="d-flex justify-content-between flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h4 class="my-0 font-weight-normal" style="font-family: 'Kufam'; font-style: italic;">Movies RD</h4>
+        <h5 class="align-items-center" style="font-style: italic; font-family: 'Kufam';">See all the movies that you can</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 btn btn-outline-dark" asp-controller="Movies" style="font-family: 'Kufam'; font-style: italic;">Movies</a>
+            <a class="p-2 btn btn-outline-dark" asp-controller="Admin" style="font-family: 'Kufam'; font-style: italic;">Administration</a>
+        </nav>
+        @*<a class="btn btn-outline-primary" href="#">Sign up</a>*@
+    </div>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" class="pb-5">
             @RenderBody()
         </main>
     </div>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
