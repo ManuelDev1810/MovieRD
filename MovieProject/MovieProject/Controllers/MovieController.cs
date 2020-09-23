@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
@@ -24,12 +25,7 @@ namespace MovieProject.Controllers
             List<Movie> movies;
             try
             {
-                //Use the factory to create a client for us
-                //Either call from an existing client or it will create a new client depending on its rules
-                //It has a pool of clients and it managed it without causing an socket exhaustion
-                //It does a lot of things for us
-                var client = _clientFactory.CreateClient("MovieProject");
-                movies = await client.GetFromJsonAsync<List<Movie>>("Movie");
+                movies = await GetMovies();
             }
             catch (Exception)
             {
@@ -38,6 +34,23 @@ namespace MovieProject.Controllers
             }
 
             return View(movies);
+        }
+
+        public async Task<List<Movie>> GetMovies()
+        {
+            //Use the factory to create a client for us
+            //Either call from an existing client or it will create a new client depending on its rules
+            //It has a pool of clients and it managed it without causing an socket exhaustion
+            //It does a lot of things for us
+            var client = _clientFactory.CreateClient("MovieProject");
+            var movies = await client.GetFromJsonAsync<List<Movie>>("Movie");
+            return movies.OrderByDescending(m => m.Release).ToList();
+        }
+
+        public async Task<Movie> GetMovie(string id)
+        {
+            var client = _clientFactory.CreateClient("MovieProject");
+            return await client.GetFromJsonAsync<Movie>("Movie/GetByID/" + id);
         }
 
         public ActionResult Create()
@@ -58,7 +71,7 @@ namespace MovieProject.Controllers
                 }
                 catch(Exception)
                 {
-                    ModelState.AddModelError("error", "Ocurrio un problema guardando el archivo.");
+                    ModelState.AddModelError("error", "Ocurrio un problema guardando la pelicula.");
                     return BadRequest(); 
                 }
             } else
@@ -72,8 +85,7 @@ namespace MovieProject.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(string id)
         {
-            var client = _clientFactory.CreateClient("MovieProject");
-            Movie movie = await client.GetFromJsonAsync<Movie>("Movie/GetByID/" + id);
+            Movie movie = await GetMovie(id);
             if (movie != null)
             {
                 return View(movie);
@@ -110,8 +122,7 @@ namespace MovieProject.Controllers
 
         public async Task<IActionResult> Movie(string id)
         {
-            var client = _clientFactory.CreateClient("MovieProject");
-            Movie movie = await client.GetFromJsonAsync<Movie>("Movie/GetByID/" + id);
+            Movie movie = await GetMovie(id);
 
             if (movie != null)
                 return View(movie);
@@ -125,7 +136,7 @@ namespace MovieProject.Controllers
             try
             {
                 var client = _clientFactory.CreateClient("MovieProject");
-                Movie movie = await client.GetFromJsonAsync<Movie>("Movie/Delete/" + id);
+                await client.DeleteAsync("Movie/Delete/" + id);
             }
             catch (Exception e)
             {

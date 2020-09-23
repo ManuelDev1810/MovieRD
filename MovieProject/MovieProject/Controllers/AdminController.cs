@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
@@ -19,7 +20,7 @@ namespace MovieProject.Controllers
         {
             var client = _clientFactory.CreateClient("MovieProject");
             List<Movie> movies = await client.GetFromJsonAsync<List<Movie>>("Movie");
-            return View(movies);
+            return View(movies.OrderByDescending(m => m.Release).ToList());
         }
     }
 }

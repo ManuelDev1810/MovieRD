@@ -1,17 +1,17 @@
 ﻿@model List<Movie>
 
-    <div class="card-columns">
-        @foreach (var movie in Model)
-        {
-            <div class="card">
-                <a asp-controller="Movie" asp-action="Movie" asp-route-id="@movie.ID"><img src="@movie.UrlLogo" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                    <h5 class="card-title">@movie.Name</h5>
-                    <p class="card-text">Duration: @movie.Duration</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">@movie.Release</small>
-                </div>
+<div class="card-columns">
+    @foreach (var movie in Model)
+    {
+        <div class="card">
+            <a asp-controller="Movie" asp-action="Movie" asp-route-id="@movie.ID"><img src="@movie.UrlLogo" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title">@movie.Name</h5>
+                <p class="card-text">Duration: @movie.Duration</p>
             </div>
-        }
-    </div>
+            <div class="card-footer">
+                <small class="text-muted">Release: @movie.Release.ToShortDateString()</small>
+            </div>
+        </div>
+    }
+</div>

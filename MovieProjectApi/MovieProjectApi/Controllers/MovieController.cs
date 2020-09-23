@@ -20,7 +20,7 @@ namespace MovieProjectApi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Movie> Get()
+        public IEnumerable<Movie> Get() 
         {
             return _movieRepository.GetAllWithComments();
         }
@@ -75,7 +75,7 @@ namespace MovieProjectApi.Controllers
             return Ok();
         }
 
-        [HttpGet("Delete/{id}")]
+        [HttpDelete("Delete/{id}")]
         public async Task<ActionResult> Delete(string id)
         {
             if (ModelState.IsValid)
