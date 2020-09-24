@@ -1,18 +1,11 @@
 ﻿<Properties StartupConfiguration="{DB78B507-EBE9-47AB-A44F-54F3E17F8444}|Default">
   <MonoDevelop.Ide.ItemProperties.MovieProjectApi PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MovieProjectApi/Controllers/MovieController.cs">
-    <Files>
-      <File FileName="MovieProjectApi/Controllers/MovieController.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MovieProjectApi" expanded="True">
-            <Node name="MovieProjectApi" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="MovieController.cs" selected="True" />
-              </Node>
-            </Node>
+            <Node name="MovieProjectApi" expanded="True" />
           </Node>
         </State>
       </Pad>

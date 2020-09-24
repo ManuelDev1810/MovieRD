@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{A5B5F245-E9EB-40DB-8724-912D233B2312}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MovieProject/Views/Movie/Movie.cshtml">
+    <Files>
+      <File FileName="MovieProject/Views/Movie/Movie.cshtml" Line="7" Column="56" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MovieProject" expanded="True">
             <Node name="MovieProject" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="AdminController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Movie" expanded="True" />
+                <Node name="Movie" expanded="True">
+                  <Node name="Movie.cshtml" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
