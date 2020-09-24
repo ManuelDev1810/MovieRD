@@ -30,6 +30,12 @@ namespace MovieProjectApi.Controllers
             return await _commentRepository.GetByID(id);
         }
 
+        [HttpGet("GetAllByMovieID/{id}")]
+        public IEnumerable<Comment> GetAllByMovieID(string id)
+        {
+            return _commentRepository.GetAllByMovieID(id);
+        }
+
         [HttpPost]
         public ActionResult Post(Comment comment)
         {

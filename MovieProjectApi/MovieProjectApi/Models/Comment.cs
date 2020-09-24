@@ -8,6 +8,7 @@ namespace MovieProjectApi.Models
     {
         [Key]
         public Guid ID { get; set; }
+        public string Name { get; set; }
         public string Description { get; set; }
         public DateTime Date { get; set; }
         [ForeignKey("Movie")]

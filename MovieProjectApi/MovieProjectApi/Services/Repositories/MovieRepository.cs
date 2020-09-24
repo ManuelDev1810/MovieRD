@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MovieProjectApi.Data;
 using MovieProjectApi.Models;
@@ -19,6 +20,11 @@ namespace MovieProjectApi.Services.Repositories
         public IEnumerable<Movie> GetAllWithComments()
         {
             return context.Movie.Include(a => a.Comments).ToList();
+        }
+
+        public async Task<Movie> GetByIDWithComments(string id)
+        {
+            return await context.Movie.Where(m => m.ID == new Guid(id)).Include(a => a.Comments).FirstOrDefaultAsync();
         }
     }
 }

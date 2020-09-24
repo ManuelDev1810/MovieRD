@@ -50,7 +50,8 @@ namespace MovieProject.Controllers
         public async Task<Movie> GetMovie(string id)
         {
             var client = _clientFactory.CreateClient("MovieProject");
-            return await client.GetFromJsonAsync<Movie>("Movie/GetByID/" + id);
+            var data = await client.GetFromJsonAsync<Movie>("Movie/GetByIDWithComments/" + id);
+            return data;
         }
 
         public ActionResult Create()
@@ -123,6 +124,8 @@ namespace MovieProject.Controllers
         public async Task<IActionResult> Movie(string id)
         {
             Movie movie = await GetMovie(id);
+            movie.Views += 1;
+            await Edit(movie);
 
             if (movie != null)
                 return View(movie);

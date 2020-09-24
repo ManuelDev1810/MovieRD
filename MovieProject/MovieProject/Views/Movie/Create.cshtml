@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="form-row">
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-4">
             <label asp-for="Category">Category</label>
             <select id="inputState" class="form-control" asp-for="Category">
                 <option selected>Choose...</option>
@@ -48,7 +48,7 @@
                 <option value="8">Thriller</option>
             </select>
         </div>
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-4">
             <label asp-for="Language">Language</label>
             <select id="inputState" class="form-control" asp-for="Language">
                 <option selected>Choose...</option>
@@ -58,13 +58,23 @@
                 <option value="4">Hindi</option>
             </select>
         </div>
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-4">
             <label asp-for="Rating">Rating</label>
             <input type="range" asp-for="Rating" class="form-control custom-range mt-3" min="0" max="5" step="0.5" id="rating">
         </div>
-        <div class="form-group col-md-3">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label asp-for="Release">Created Date</label>
+            <input readonly value="@DateTime.Now.ToShortDateString()" asp-for="CreatedDate" class="form-control" id="release">
+        </div>
+        <div class="form-group col-md-4">
             <label asp-for="Release">Release</label>
             <input type="date" asp-for="Release" class="form-control" id="release">
+        </div>
+        <div class="form-group col-md-4">
+            <label asp-for="Sinopsis">Sinopsis</label>
+            <textarea class="form-control" asp-for="Sinopsis" rows="3"></textarea>
         </div>
     </div>
     <div class="form-group">
@@ -77,5 +87,5 @@
     </div>
     <nav class="my-2 my-md-0 mr-md-3">
     </nav></>
-        <button type="submit" class="p-2 btn btn-outline-dark" style="font-family: 'Kufam'; font-style: italic;">Create Movie</button>
+    <button type="submit" class="p-2 btn btn-outline-dark" style="font-family: 'Kufam'; font-style: italic;">Create Movie</button>
 </form>

@@ -2,6 +2,84 @@
 
 <div class="d-flex justify-content-between align-items-end">
     <h5 class="my-0 border-bottom border-dark mb-3" style="font-style: italic; font-family: 'Kufam';">Movie: @Model.Name</h5>
+    <h5 class="my-0 border-bottom border-dark mb-3" style="font-style: italic; font-family: 'Kufam';">Views: @Model.Views.ToString()</h5>
 </div>
 
-<iframe width="1200" height="700" frameborder="0" src="@Model.UrlVideo" allowfullscreen></iframe>
+<iframe width="1110" height="700" frameborder="0" src="@Model.UrlVideo" allowfullscreen></iframe>
+
+<div class="row d-flex justify-content-between">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Sinopsis</h5>
+                <textarea class="form-control" asp-for="Sinopsis" rows="6" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Information of the movie</h5>
+                <table class="table table">
+                    <tbody>
+                        <tr>
+                            <td>Duration:</td>
+                            <td>@Model.Duration</td>
+                        </tr>
+                        <tr>
+                            <td>Rating:</td>
+                            <td>@Model.Rating.ToString()</td>
+                        </tr>
+                        <tr>
+                            <td>Release</td>
+                            <td>@Model.Release.ToShortDateString()</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card mt-2">
+    <h5 class="card-header">Comentarios</h5>
+    <div class="card-body">
+        <h5 class="card-title">Favor introduce tu comentario</h5>
+
+        <form>
+            <div class="form-row align-items-center">
+                <div class="col-sm-2 my-1">
+                    <label class="sr-only" for="inlineFormInputName">Name</label>
+                    <input type="text" class="form-control" id="nameOfPersonComment" placeholder="Nombre">
+                </div>
+                <div class="col-sm-8 my-1">
+                    <label class="sr-only" for="inlineFormInputName">Name</label>
+                    <input type="text" class="form-control" id="comment" placeholder="Comentario">
+                </div>
+                <div class="col-auto my-1">
+                    <button type="button" onclick="postComment('commentContainer')" class="btn btn-primary">Postear</button>
+                </div>
+            </div>
+        </form>
+
+        <hr />
+
+        <div id="commentContainer" class="">
+            @if(Model.Comments != null){
+                foreach(var comment in Model.Comments)
+                {
+                    <div class="card col-auto mb-2" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">@comment.Name</h5>
+                            <p class="card-text">@comment.Description</p>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+
+    </div>
+</div>
+
+<input type="hidden" value="@Model.ID" id="movieID" />

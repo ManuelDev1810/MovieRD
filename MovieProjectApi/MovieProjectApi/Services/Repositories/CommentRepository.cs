@@ -21,5 +21,11 @@ namespace MovieProjectApi.Services.Repositories
             var data = context.Comment.Include(m => m.Movie).ToList();
             return data;
         }
+
+        public IEnumerable<Comment> GetAllByMovieID(string movieID)
+        {
+            var data = context.Comment.Where(m => m.MovieId == new Guid(movieID)).Include(m => m.Movie).ToList();
+            return data;
+        }
     }
 }

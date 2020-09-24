@@ -22,13 +22,20 @@ namespace MovieProjectApi.Controllers
         [HttpGet]
         public IEnumerable<Movie> Get() 
         {
-            return _movieRepository.GetAllWithComments();
+            var movies = _movieRepository.GetAllWithComments();
+            return movies.OrderByDescending(m => m.CreatedDate);
         }
 
         [HttpGet("GetByID/{id}")]
         public async Task<Movie> GetByID(string id)
         {
             return await _movieRepository.GetByID(id);
+        }
+
+        [HttpGet("GetByIDWithComments/{id}")]
+        public async Task<Movie> GetByIDWithComments(string id)
+        {
+            return await _movieRepository.GetByIDWithComments(id);
         }
 
         [HttpPost]
