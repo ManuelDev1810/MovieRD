@@ -14,7 +14,7 @@
         "outputPath": "/Users/manueldejesusguerrerovasquez/Projects/MovieProjectApi/MovieProjectApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/manueldejesusguerrerovasquez/.nuget/NuGet/NuGet.Config"
+          "/Users/manueldejesusguerrerovasquez/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

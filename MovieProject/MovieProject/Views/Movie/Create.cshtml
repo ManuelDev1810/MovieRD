@@ -8,7 +8,8 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <label asp-for="Name">Name</label>
-            <input type="text" class="form-control" id="name" asp-for="Name" placeholder="Name of the Movie">
+            <input class="form-control" asp-for="Name" placeholder="Name of the Movie">
+            <span asp-validation-for="@Model.Name" class="text-danger"></span>
         </div>
         <div class="form-group col-md-6">
             <label asp-for="Duration">Duration</label>
@@ -21,7 +22,7 @@
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon3">https://youtu.be/5bmy5uRDQYs</span>
             </div>
-            <input type="text" asp-for="UrlVideo" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            <input asp-for="UrlVideo" class="form-control" aria-describedby="basic-addon3">
         </div>
     </div>
     <div class="form-group">
@@ -30,13 +31,13 @@
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon3">https://page.com/action.png</span>
             </div>
-            <input type="text" asp-for="UrlLogo" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            <input asp-for="UrlLogo" class="form-control" aria-describedby="basic-addon3">
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-4">
             <label asp-for="Category">Category</label>
-            <select id="inputState" class="form-control" asp-for="Category">
+            <select class="form-control" asp-for="Category">
                 <option selected>Choose...</option>
                 <option value="1">Action</option>
                 <option value="2">Comedy</option>
@@ -50,7 +51,7 @@
         </div>
         <div class="form-group col-md-4">
             <label asp-for="Language">Language</label>
-            <select id="inputState" class="form-control" asp-for="Language">
+            <select class="form-control" asp-for="Language">
                 <option selected>Choose...</option>
                 <option value="1">Mandarin</option>
                 <option value="2">Spanish</option>
@@ -66,11 +67,11 @@
     <div class="form-row">
         <div class="form-group col-md-4">
             <label asp-for="Release">Created Date</label>
-            <input readonly value="@DateTime.Now.ToShortDateString()" asp-for="CreatedDate" class="form-control" id="release">
+            <input readonly value="@DateTime.Now.ToShortDateString()" asp-for="CreatedDate" class="form-control">
         </div>
         <div class="form-group col-md-4">
             <label asp-for="Release">Release</label>
-            <input type="date" asp-for="Release" class="form-control" id="release">
+            <input type="date" asp-for="Release" class="form-control">
         </div>
         <div class="form-group col-md-4">
             <label asp-for="Sinopsis">Sinopsis</label>
@@ -79,8 +80,8 @@
     </div>
     <div class="form-group">
         <div class="form-check">
-            <input class="form-check-input" asp-for="IncludedSubtitles" type="checkbox" id="includedSubtitles">
-            <label class="form-check-label" for="includedSubtitles">
+            <input class="form-check-input" asp-for="IncludedSubtitles" type="checkbox">
+            <label class="form-check-label" asp-for="IncludedSubtitles">
                 Included Subtitles
             </label>
         </div>

@@ -5,17 +5,7 @@
         <State name="__root__">
           <Node name="MovieProject" expanded="True">
             <Node name="MovieProject" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Movie" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="js" expanded="True" />
-              </Node>
+              <Node name="Views" selected="True" />
             </Node>
           </Node>
         </State>
